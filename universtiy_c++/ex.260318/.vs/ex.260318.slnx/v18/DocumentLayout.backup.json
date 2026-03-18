@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\university_programming\\universtiy_c\u002B\u002B\\ex.260318\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEE5662-5347-4824-AFCB-2599788DF7A9}|ex.260318\\ex.260318.vcxproj|C:\\university_programming\\universtiy_c\u002B\u002B\\ex.260318\\ex.260318\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AAEE5662-5347-4824-AFCB-2599788DF7A9}|ex.260318\\ex.260318.vcxproj|solutionrelative:ex.260318\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\university_programming\\universtiy_c\u002B\u002B\\ex.260318\\ex.260318\\main.cpp",
+              "RelativeDocumentMoniker": "ex.260318\\main.cpp",
+              "ToolTip": "C:\\university_programming\\universtiy_c\u002B\u002B\\ex.260318\\ex.260318\\main.cpp",
+              "RelativeToolTip": "ex.260318\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-18T05:08:13.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
