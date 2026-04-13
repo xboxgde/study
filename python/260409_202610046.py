@@ -156,7 +156,7 @@ print(f"같은 숫자는 총 {count}회 나왔습니다.")
 
 dan = int(input("단(2~9) 입력 : "))
 
-if 1 <= dan <= 9 :
+if 2 <= dan <= 9 :
     for i in range(1, 10) :
         print(f"{dan} * {i} = {dan * i}")
     
