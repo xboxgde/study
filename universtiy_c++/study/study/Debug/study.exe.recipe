@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\github\universtiy_c++\study\x64\Debug\study.exe</FullPath>
+      <FullPath>C:\github\universtiy_c++\study\Debug\study.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

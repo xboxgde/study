@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\university_programming\\universtiy_c\u002B\u002B\\study\\",
+  "WorkspaceRootPath": "C:\\github\\universtiy_c\u002B\u002B\\study\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C6F0197-4A7E-470A-8FDF-E1F3FB3E1BDC}|study\\study.vcxproj|C:\\university_programming\\universtiy_c\u002B\u002B\\study\\study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C6F0197-4A7E-470A-8FDF-E1F3FB3E1BDC}|study\\study.vcxproj|solutionrelative:study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\university_programming\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
+              "DocumentMoniker": "C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
               "RelativeDocumentMoniker": "study\\main.cpp",
-              "ToolTip": "C:\\university_programming\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
+              "ToolTip": "C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
               "RelativeToolTip": "study\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-29T07:11:19.072Z",
               "EditorCaption": ""

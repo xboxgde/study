@@ -1,17 +1,9 @@
 #include <stdio.h>
-
 int main()
 {
-	int arr[4] = { 5, 3, 8, 1 };
-	int* p = &arr[3];
-
-	for (int i = 4; i >= 0; i--)
-	{
-		printf("%d\n", p[-i]);
-	}
-
-	printf("%d\n", p[-3]);
-	printf("%d\n", p[-2]);
-	printf("%d\n", p[-1]);
-	printf("%d\n", p[-0]);
+    int n = 5;
+    printf("하위4비트: %d\n", n & 0xF);
+    printf("가나다 %d\n", n | 8);
+    printf("123. %d\n", n ^ 2);
+    
 }
