@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\github\\universtiy_c\u002B\u002B\\study\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6F0197-4A7E-470A-8FDF-E1F3FB3E1BDC}|study\\study.vcxproj|C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C6F0197-4A7E-470A-8FDF-E1F3FB3E1BDC}|study\\study.vcxproj|solutionrelative:study\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
+              "RelativeDocumentMoniker": "study\\main.cpp",
+              "ToolTip": "C:\\github\\universtiy_c\u002B\u002B\\study\\study\\main.cpp",
+              "RelativeToolTip": "study\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-14T11:46:22.356Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

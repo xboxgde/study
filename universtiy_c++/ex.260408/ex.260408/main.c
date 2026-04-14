@@ -12,6 +12,7 @@ int main()
 	PrintData(n1, n2);
 	PrintAddress(&n1, &n2);
 
+	printf("가");
 }
 
 void PrintAddress(int* a, int* b)
@@ -23,6 +24,7 @@ void PrintData(int a, int b)
 {
 	printf("%d %d\n", a, b);
 }
+
 
 //#include <stdio.h>
 //
