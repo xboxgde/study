@@ -156,3 +156,19 @@ for i in range(1, 31) :
         print("Buzz")
     else :
         print(f"{i}")
+
+
+# 별찍기
+
+"""
+for i in range(0, 5) :
+    for k in range(0, i + 1) :
+        print("*", end="")
+    print("")
+
+for i in range(5, 0, -1) :
+    for k in range(0, i + 1) :
+        print("*", end="")
+    print("")
+"""
+
