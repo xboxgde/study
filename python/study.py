@@ -149,6 +149,7 @@ for i in range(0, 5) :
 
 #13.
 
+"""
 for i in range(1, 31) :
     if i % 3 == 0 :
         print("Fizz")
@@ -156,7 +157,7 @@ for i in range(1, 31) :
         print("Buzz")
     else :
         print(f"{i}")
-
+"""
 
 # 별찍기
 
