@@ -39,6 +39,7 @@ void PrintData(int a, int b)
 //	
 //	PrintData(n1, &n2);
 //
+//	printf("%d %d\n", n1, n2);
 //}
 //
 //void PrintData(int a, int* b)

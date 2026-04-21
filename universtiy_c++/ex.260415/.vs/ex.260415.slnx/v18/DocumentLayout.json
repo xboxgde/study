@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\github\\universtiy_c\u002B\u002B\\ex.260415\\",
+  "WorkspaceRootPath": "D:\\github\\universtiy_c\u002B\u002B\\ex.260415\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3133D0B-954D-4A36-AD17-665EC4FA9F7D}|ex.260415\\ex.260415.vcxproj|C:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A3133D0B-954D-4A36-AD17-665EC4FA9F7D}|ex.260415\\ex.260415.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A3133D0B-954D-4A36-AD17-665EC4FA9F7D}|ex.260415\\ex.260415.vcxproj|solutionrelative:ex.260415\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp",
               "RelativeDocumentMoniker": "ex.260415\\main.cpp",
-              "ToolTip": "C:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260415\\ex.260415\\main.cpp",
               "RelativeToolTip": "ex.260415\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-15T04:58:36.931Z",
               "EditorCaption": ""
