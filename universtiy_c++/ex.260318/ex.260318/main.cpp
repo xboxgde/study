@@ -5,12 +5,11 @@ int main()
 	int a = 10;
 	int b = 0;
 
-	printf("%d \n", a && b);
-	printf("%d \n", a || b);
-	printf("%d \n", !a);
-	printf("%d \n", !b);
+	printf("%d \n", a && b); // 0
+	printf("%d \n", a || b); // 1
+	printf("%d \n", !a); // 0
+	printf("%d \n", !b); // 1
 }
-
 
 //#include <stdio.h>
 //

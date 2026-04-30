@@ -1,11 +1,15 @@
 //ctrl + k + c -> 주석
 //ctrl + k + u -> 주석 해제
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-	int sum = 0;
+	int sum = _getch();
 
+	printf("%c\n", sum);
+	printf("%d\n", sum);
+	/*
 	for (int i = 1; i <= 10; i++)
 	{
 		if (i % 2 == 0)
@@ -15,6 +19,7 @@ int main()
 		}
 		
 	}
+	*/
 }
 
 //#include <stdio.h>

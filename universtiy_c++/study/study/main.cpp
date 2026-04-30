@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <conio.h>
 // 연산자
 /*
 +
@@ -47,28 +47,69 @@
 
 //입출력
 /*
+#include <conio.h>    <- 필ㅅ
 
-getchar();
+_getch();
 
 printf();
 
 */
 
 
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;
+//	int** pp = &p;
+//
+//	*p = a;
+//
+//	p = &a;
+//
+//	*pp = p;
+//
+//	pp = &p;
+//
+//	int s = _getch();
+//}
+
+//int main()
+//{
+//
+//	for (int i = 1; i <= 10; i++)
+//	{
+//		//printf("%-5d", i); //<- 좌정렬
+//		printf("%5d", i);  //<-   우정렬
+//	}
+//	printf("\n");
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	// 논리 연산자
+//	// 비트 (논리) 연산자 : AND(&) OR(|) XOR(^) NOT(~)
+//	int a = 5; // 0101
+//	int b = 3; // 0011
+//
+//	printf("%d\n", a & b); // 0001
+//	printf("%d\n", a | b); // 0111
+//	printf("%d\n", a ^ b); // 0110
+//	printf("%d\n", ~a); // 
+//	printf("%08X\n", ~a);
+//	printf("%d\n", ~b);
+//	printf("%08X\n", ~b);
+//}
+
 int main()
 {
-	int a = 10;
-	int* p = &a;
-	int** pp = &p;
-
-	*p = a;
-
-	p = &a;
-
-	*pp = p;
-
-	pp = &p;
-
-
+	int arr[4] = { 5, 3, 8, 1 };
+	int* p = &arr[3];
+	
+	for (int i = 3; i >= 0; --i)
+	{
+		printf("%d\n", p[-i]);
+	}
 
 }
