@@ -102,14 +102,20 @@ printf();
 //	printf("%08X\n", ~b);
 //}
 
+//int main()
+//{	
+//	char arr[] = "hello";
+//
+//	for (int i = 0; i < 6; ++i)
+//	{
+//		printf("%c, %d\n", arr[i], (int*)arr[i]);
+//	}
+//}
+#include <stdlib.h>
+#include <string.h>
+
 int main()
 {
-	int arr[4] = { 5, 3, 8, 1 };
-	int* p = &arr[3];
-	
-	for (int i = 3; i >= 0; --i)
-	{
-		printf("%d\n", p[-i]);
-	}
-
 }
+
+
