@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ex.260610/ex.260610.vcxproj" Id="27ecf469-fd71-4aea-9537-bf980645cee9" />
+  <Project Path="SwapApp/SwapApp.vcxproj" Id="818bce04-faa6-4259-8822-f25e613366a1" />
+</Solution>
