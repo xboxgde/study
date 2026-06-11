@@ -1,5 +1,5 @@
 def coffee(menu, price) :
-    global money  
+    global money # coffee 함수 밖에 있는 money 변수를 가져옴
     if money >= price:
 
         money -= price
