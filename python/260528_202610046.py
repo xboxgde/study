@@ -151,8 +151,6 @@ for i in lotto:
 
 # 로또(1 ~ 45, 6개 숫자 ) 프로그램 (중복 x, 오름차순 정렬)
 
-
-
 """
 import random as r
 
@@ -163,7 +161,7 @@ for i in range(1, 46) :
 
 r.shuffle(lotto) # 리스트 lotto 황목 위치 변경(랜덤 섞기)
 
-lotto2 = lotto[:6] # 슬라이싱 추출(0 부터 5번까지 추출)
+lotto2 = lotto[:5] # 슬라이싱 추출(0 부터 5번까지 추출)
 
 print("로또 번호입니다.")
 
@@ -198,6 +196,7 @@ print(a)
 
 # 로또(1 ~ 45, 6개 숫자 ) 프로그램 (중복 x, set 사용, 오름차순 정렬)
 
+
 import random as r
 
 lotto = set()
@@ -211,7 +210,5 @@ print("로또 번호입니다.")
 
 for i in lotto2:
     print(i, end=" ")
-
-
 
 

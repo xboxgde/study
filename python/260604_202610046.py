@@ -159,9 +159,11 @@ while True :
 i *** python
 """
 
+"""
 str_input  = input("문장 입력 : ")
 not_str_input = input("제외하고 싶은 단어 입력 : ")
 
 result = str_input.replace(not_str_input, "*" * len(not_str_input))
 
 print(result)
+"""
