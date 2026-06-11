@@ -91,5 +91,3 @@ print(f"avg : {asum(a)/len(a):.1f}")
 
 
 
-
-
