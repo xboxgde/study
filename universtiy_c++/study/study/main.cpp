@@ -102,14 +102,33 @@ printf();
 //	printf("%08X\n", ~b);
 //}
 
+//int main()
+//{
+//	int arr[4] = { 5, 3, 8, 1 };
+//	int* p = &arr[3];
+//	
+//	for (int i = 3; i >= 0; --i)
+//	{
+//		printf("%d\n", p[-i]);
+//	}
+//
+//}
+
+#include <stdio.h>
+void PrintArray(int arr[], int size)
+{
+	for (int i = 0; i < size; ++i)
+		printf("%5d", arr[i]);
+	printf("\n");
+}
 int main()
 {
-	int arr[4] = { 5, 3, 8, 1 };
-	int* p = &arr[3];
-	
-	for (int i = 3; i >= 0; --i)
-	{
-		printf("%d\n", p[-i]);
-	}
+	int arr[10] = { 5, 7, 3, 4, 6, 2, 1, 9, 7, 3 };
+	PrintArray(arr, 10);
 
+	int a = 10, b = 20;
+	int result = a + b;
+	printf("result = %d\n", result);
+	printf("result = %d\n", result);
+	printf("result = %d\n", result);
 }

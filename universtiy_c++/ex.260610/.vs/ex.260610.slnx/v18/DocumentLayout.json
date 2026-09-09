@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|solutionrelative:SwapApp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|solutionrelative:SwapApp\\printswap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27ECF469-FD71-4AEA-9537-BF980645CEE9}|ex.260610\\ex.260610.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\ex.260610\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{27ECF469-FD71-4AEA-9537-BF980645CEE9}|ex.260610\\ex.260610.vcxproj|solutionrelative:ex.260610\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|solutionrelative:SwapApp\\printswap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{818BCE04-FAA6-4259-8822-F25E613366A1}|SwapApp\\SwapApp.vcxproj|solutionrelative:SwapApp\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +42,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "printswap.h",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.h",
+              "RelativeDocumentMoniker": "SwapApp\\printswap.h",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.h",
+              "RelativeToolTip": "SwapApp\\printswap.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-06-12T08:54:23.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.h",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.h",
+              "RelativeDocumentMoniker": "SwapApp\\main.h",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.h",
+              "RelativeToolTip": "SwapApp\\main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-06-12T08:54:22.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "printswap.cpp",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.cpp",
+              "RelativeDocumentMoniker": "SwapApp\\printswap.cpp",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\printswap.cpp",
+              "RelativeToolTip": "SwapApp\\printswap.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-12T08:53:55.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.cpp",
+              "RelativeDocumentMoniker": "SwapApp\\main.cpp",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\SwapApp\\main.cpp",
+              "RelativeToolTip": "SwapApp\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-12T08:53:08.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260610\\ex.260610\\main.cpp",
               "RelativeDocumentMoniker": "ex.260610\\main.cpp",
