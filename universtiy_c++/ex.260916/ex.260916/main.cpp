@@ -1,0 +1,149 @@
+﻿#include <stdio.h>
+
+struct Point
+{
+	int x;
+	int y;
+};
+
+int main()
+{
+	Point pt = { 1, 2 };
+	Point* p = &pt;
+	Point* p2 = &pt;
+	Point* p3 = p;
+
+	printf("%d, %d\n", pt.x, pt.y);
+	printf("%d, %d\n", p->x, p->y);
+	printf("%d, %d\n", p2->x, p2->y);
+	printf("%d, %d\n", p3->x, p3->y);
+
+}
+
+//#include <stdio.h>
+//
+//struct Point
+//{
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	Point pt = { 1, 2 };
+//	Point* p = &pt;
+//
+//	printf("%d, %d\n", pt.x, pt.y);
+//	printf("%d, %d\n", p->x, p->y);
+//	printf("%d, %d\n", (& pt)->x, (& pt)->y);
+//	printf("%d, %d\n", (*p).x, (*p).y);
+//
+//}
+
+//#include <stdio.h>
+//
+//struct Point
+//{
+//	int x;
+//	int y;
+//};
+//void PrintPoint(Point* pt)
+//{
+//	printf("(%d, %d)\n", pt->x, pt->y);
+//}
+//void ResetPoint(Point* target, int x, int y)
+//{
+//	target->x = x;
+//	target->y = y;
+//}
+//
+//int main()
+//{
+//	Point pt1 = { 2, 2 };
+//
+//	PrintPoint(&pt1);
+//	pt1 = { 5, 9 };
+//	ResetPoint(&pt1, 5, 9);
+//	PrintPoint(&pt1);
+//
+//}
+
+//#include <stdio.h>
+//
+//struct Point
+//{
+//	int x;
+//	int y;
+//};
+//void PrintPoint(Point pt)
+//{
+//	printf("(%d, %d)\n", pt.x, pt.y);
+//}
+//
+//int main()
+//{
+//	Point pt1 = { 2, 2 };
+//	
+//	printf("(%d, %d)\n", pt1.x, pt1.y);
+//	PrintPoint(pt1);
+//
+//}
+
+//#include <stdio.h>
+//
+//struct Point
+//{
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	 Point pt1= { 2, 2 };
+//	 Point pt2 = { 4, 1 };
+//	 Point ptArray[3] = { {1,2}, {5,4}, {7,9} };
+//
+//	 printf("%d\n", sizeof(int));
+//	 printf("%d\n", sizeof(Point));
+//	 printf("%d\n", sizeof(pt1));
+//
+//}
+
+//#include <stdio.h>
+//
+//struct Point
+//{
+//	int x;
+//	int y;
+//};
+//
+//struct PointD
+//{
+//	double x;
+//	double y;
+//};
+//int main()
+//{
+//	int a = 10;
+//	Point pt = { 1, 2 };
+//	PointD ptd = { 1.2, 2.2 };
+//
+//	printf("%d\n", a);
+//	printf("%d, %d\n", pt.x, pt.y);
+//	printf("%.1lf, %.1lf\n", ptd.x, ptd.y);
+//
+//}
+
+//#include <stdio.h>
+//
+//struct Point // 구조체 정의
+//{
+//	int x;
+//	int y;
+//};
+//
+//int main() 
+//{
+//	int a = 10; // 정수 형식 a 변수
+//	Point pt = { 1, 2 }; // Point 형식 pt 변수
+//}
