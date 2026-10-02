@@ -3,139 +3,203 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef struct _stringArray
-{
-    char** buf;
-    int count;
-    int capacity;
-}StringArray;
-void Menu()
-{
-    puts("1. 문자열 입력:");
-    puts("2. 모든 문자열 출력:");
-    puts("3. 문자열 검색:");
-    puts("4. 문자열 삭제:");
-    puts("0. 프로그램 종료");
-}
-void AddString(StringArray* psa)
-{
-    if (psa->count >= psa->capacity)
-        return;
-
-    printf("문자열 입력:");
-    char str[500];
-    gets_s(str, 500);
-    char* s = (char*)malloc(strlen(str) + 1);
-    strcpy_s(s, strlen(str) + 1, str);
-
-    psa->buf[psa->count] = s;
-    ++psa->count;
-}
-void PrintString(const StringArray* psa)
-{
-    for (int i = 0; i < psa->count; ++i)
-        printf("[%d] : %s\n", i, psa->buf[i]);
-}
-void SearchString(const StringArray* psa)
-{
-    char str[500];
-    printf("검색할 문자열 입력:");
-    gets_s(str, 500);
-    for (int i = 0; i < psa->count; ++i)
-    {
-        if (strcmp(str, psa->buf[i]) == 0)
-        {
-            printf("[%d] : %s 있습니다.\n", i, str);
-            break;
-        }
-    }
-}
-void RemoveString(StringArray* psa)
-{
-    char str[500];
-    printf("삭제할 문자열 입력:");
-    gets_s(str, 500);
-    for (int i = 0; i < psa->count; ++i)
-    {
-        
-        if (strcmp(str, psa->buf[i]) == 0)
-        {
-            free(psa->buf[i]);
-            for (int j = i; j < psa->count - 1; ++j)
-                psa->buf[j] = psa->buf[j + 1];
-            --psa->count;
-            break;
-        }
-    }
-}
-void InitString(StringArray* psa, int capacity)
-{
-    psa->buf = (char**)malloc(sizeof(char*) * capacity);
-    psa->count = 0;
-    psa->capacity = capacity;
-}
-void UninitString(StringArray* psa)
-{
-    for (int i = 0; i < psa->count; ++i)
-        free(psa->buf[i]);
-}
-
-void Sort(StringArray* psa)
-{
-    for (int i = 0; i < psa->count; ++i)
-    {
-        if (psa->buf[i + 1] != psa->buf[psa->count])
-        {
-            if (strcmp(psa->buf[i], psa->buf[i + 1]) == 1)
-            {
-                char* value = psa->buf[i + 1];
-                printf("%s\n", value);
-                psa->buf[i + 1] = psa->buf[i];
-                psa->buf[i] = value;
-                printf("%s\n", psa->buf[i]);
-                printf("%s\n", psa->buf[i + 1]);
-            }
-        }
-        else
-            break;
-    }
-    
-}
-
 int main()
 {
-    StringArray sa;
-    int run = 1;
+	int row = 3, col = 5;
 
-    InitString(&sa, 1000);
-    while (run)
-    {
-        Menu();
-        switch (_getch())
-        {
-        case '1':
-            AddString(&sa);
-            break;
-        case '2':
-            PrintString(&sa);
-            break;
-        case '3':
-            SearchString(&sa);
-            break;
-        case '4':
-            RemoveString(&sa);
-            break;
-        case '5':
-            Sort(&sa);
-            break;
-        case '0':
-            run = 0;
-            break;
-        }
-    }
+	int** ary = (int**)malloc(sizeof(int*) * row);
 
-    UninitString(&sa);
+	for (int i = 0; i < row; ++i)
+		ary[i] = (int*)malloc(sizeof(int) * col);
+
+	for (int i = 0; i < row; ++i)
+	{
+		for (int j = 0; j < col; ++j)
+		{
+			ary[i][j] = (3 + i) * (j + 1);
+			printf("%3d", ary[i][j]);
+		}
+		printf("\n");
+	}
 }
+//#include <stdio.h>
+//#include <conio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//struct Student
+//{
+//	char* name;
+//	int score;
+//};
+//
+//void SetName(Student* student, const char* name, int score)
+//{
+//	student->name = (char*)malloc(strlen(name) + 1);
+//	strcpy_s(student->name, strlen(name) + 1, name);
+//	student->score = score;
+//}
+//
+//void PrintStudent(Student* p)
+//{
+//	printf("%s, %d\n", p->name, p->score);
+//}
+//
+//int main()
+//{
+//	Student* per1 = (Student*)malloc(sizeof(Student));
+//	Student* per2 = (Student*)malloc(sizeof(Student));
+//	
+//
+//	SetName(per1, "홍길동", 20);
+//	SetName(per2, "홍길당", 40);
+//
+//	PrintStudent(per1);
+//	PrintStudent(per2);
+//
+//	free(per1);
+//	free(per2);
+//}
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//typedef struct _stringArray
+//{
+//    char** buf;
+//    int count;
+//    int capacity;
+//}StringArray;
+//void Menu()
+//{
+//    puts("1. 문자열 입력:");
+//    puts("2. 모든 문자열 출력:");
+//    puts("3. 문자열 검색:");
+//    puts("4. 문자열 삭제:");
+//    puts("0. 프로그램 종료");
+//}
+//void AddString(StringArray* psa)
+//{
+//    if (psa->count >= psa->capacity)
+//        return;
+//
+//    printf("문자열 입력:");
+//    char str[500];
+//    gets_s(str, 500);
+//    char* s = (char*)malloc(strlen(str) + 1);
+//    strcpy_s(s, strlen(str) + 1, str);
+//
+//    psa->buf[psa->count] = s;
+//    ++psa->count;
+//}
+//void PrintString(const StringArray* psa)
+//{
+//    for (int i = 0; i < psa->count; ++i)
+//        printf("[%d] : %s\n", i, psa->buf[i]);
+//}
+//void SearchString(const StringArray* psa)
+//{
+//    char str[500];
+//    printf("검색할 문자열 입력:");
+//    gets_s(str, 500);
+//    for (int i = 0; i < psa->count; ++i)
+//    {
+//        if (strcmp(str, psa->buf[i]) == 0)
+//        {
+//            printf("[%d] : %s 있습니다.\n", i, str);
+//            break;
+//        }
+//    }
+//}
+//void RemoveString(StringArray* psa)
+//{
+//    char str[500];
+//    printf("삭제할 문자열 입력:");
+//    gets_s(str, 500);
+//    for (int i = 0; i < psa->count; ++i)
+//    {
+//        
+//        if (strcmp(str, psa->buf[i]) == 0)
+//        {
+//            free(psa->buf[i]);
+//            for (int j = i; j < psa->count - 1; ++j)
+//                psa->buf[j] = psa->buf[j + 1];
+//            --psa->count;
+//            break;
+//        }
+//    }
+//}
+//void InitString(StringArray* psa, int capacity)
+//{
+//    psa->buf = (char**)malloc(sizeof(char*) * capacity);
+//    psa->count = 0;
+//    psa->capacity = capacity;
+//}
+//void UninitString(StringArray* psa)
+//{
+//    for (int i = 0; i < psa->count; ++i)
+//        free(psa->buf[i]);
+//}
+//
+//void Sort(StringArray* psa)
+//{
+//    for (int i = 0; i < psa->count; ++i)
+//    {
+//        if (psa->buf[i + 1] != psa->buf[psa->count])
+//        {
+//            if (strcmp(psa->buf[i], psa->buf[i + 1]) == 1)
+//            {
+//                char* value = psa->buf[i + 1];
+//                printf("%s\n", value);
+//                psa->buf[i + 1] = psa->buf[i];
+//                psa->buf[i] = value;
+//                printf("%s\n", psa->buf[i]);
+//                printf("%s\n", psa->buf[i + 1]);
+//            }
+//        }
+//        else
+//            break;
+//    }
+//    
+//}
+//
+//int main()
+//{
+//    StringArray sa;
+//    int run = 1;
+//
+//    InitString(&sa, 1000);
+//    while (run)
+//    {
+//        Menu();
+//        switch (_getch())
+//        {
+//        case '1':
+//            AddString(&sa);
+//            break;
+//        case '2':
+//            PrintString(&sa);
+//            break;
+//        case '3':
+//            SearchString(&sa);
+//            break;
+//        case '4':
+//            RemoveString(&sa);
+//            break;
+//        case '5':
+//            Sort(&sa);
+//            break;
+//        case '0':
+//            run = 0;
+//            break;
+//        }
+//    }
+//
+//    UninitString(&sa);
+//}
+
 //// point.c - 구조체 정의와 기본 함수
 //typedef struct _point
 //{
@@ -252,7 +316,7 @@ int main()
 
 //입출력
 /*
-#include <conio.h>    <- 필ㅅ
+#include <conio.h>    <- 필수
 
 _getch();
 
@@ -308,7 +372,7 @@ printf();
 //}
 
 //int main()
-<<<<<<< HEAD
+
 //{	
 //	char arr[] = "hello";
 //
@@ -317,15 +381,11 @@ printf();
 //		printf("%c, %d\n", arr[i], (int*)arr[i]);
 //	}
 //}
-#include <stdlib.h>
-#include <string.h>
 
-int main()
-{
-}
-
-
-=======
+//#include <stdlib.h>
+//#include <string.h>
+//
+//int main()
 //{
 //	int arr[4] = { 5, 3, 8, 1 };
 //	int* p = &arr[3];
@@ -355,4 +415,3 @@ int main()
 //	printf("result = %d\n", result);
 //	printf("result = %d\n", result);
 //}
->>>>>>> main
