@@ -5,5 +5,5 @@
   </Configurations>
   <Project Path="ex.260923/ex.260923.vcxproj" Id="6e8420fc-c44b-4894-9344-ffbc0818ad14" />
   <Project Path="PointApp/PointApp.vcxproj" Id="1d4e3221-a677-44c4-a103-e475bb4defee" />
-  <Project Path="PointApp2/PointApp2.vcxproj" />
+  <Project Path="PointApp2/PointApp2.vcxproj" Id="09eea54c-3a2a-4a62-8229-c7ec9883ad87" />
 </Solution>
