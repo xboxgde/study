@@ -1,0 +1,68 @@
+<!-- 글로벌 속성: 모든 태그에 사용 가능한 속성 -->
+<!-- id(유일한 값), class(중복된 값 가능), style<(간단히 css 적용할 때 활용) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋아하는 캐릭터</title>
+</head>
+<body id="aa">
+    <h1>좋아하는 캐릭터 BEST 3</h1> <!-- h1 ~ h6 -> 제목 태그 -->
+    <h3>라이언, 무지, 어피치를 소개합니다.</h3>
+
+    <hr> <!-- 수평선, 빈태그 -> 닫는 태그가 없음 -->
+
+    <ul> <!-- 순서가 없는 리스트  -->
+        <li><a href="#bb">라이언</a></li>
+        <li><a href="#cc">무지</a></li>
+        <li><a href="#dd">어피치</a></li>
+    </ul>
+
+    <hr>
+
+    <h4 id="bb">라이언</h4>
+
+    <p> <!-- 문단 태그 -->
+        <mark>카카오프렌즈</mark>의 <em>든든한</em> <b>조언자</b> <i>역할</i>을 맡고 있습니다.
+    </p>
+
+    <details>
+        <summary> 자세한 내용은 클릭해보세요 </summary>
+        <img src="img1.gif" width="200" height="200"> <!-- 이미지 태그, src 속성: 경로 -->
+    <hr>
+
+    </details>
+
+    
+
+    <h4 id="cc">무지</h4>
+
+
+    <p> <!-- 문단 태그 -->
+        무지는 장난스럽고 호기심이 많다. 그는 항상 반짝이는 눈을 갖고 있으며 헬로키티와 같은 피카츄 같은 얼굴이다.
+    </p>
+
+    <img src="img2.jpg" width="200" height="200"> <!-- 이미지 태그, src 속성: 경로 -->
+
+    <hr>
+
+    <h4 id="dd">어피치</h4>
+    <p> <!-- 문단 태그 -->
+        Secret Forest의 복숭아 나무에서 유전자 변이로 태어난 어피치. Secret Forest의 풍부한 햇살을 받아 유독 돋보이는 분홍색을 띱니다.
+    </p>
+
+    <img src="img3.jpg" width="200" height="200"> <!-- 이미지 태그, src 속성: 경로 -->
+
+    <hr>
+
+    <!-- a 태그(하이퍼링크), href 속성: 경로 , target 속성:  기본값 -> _self -->
+     <!-- target="_blank" -> 새 창에서 열기 -->
+    <a href="https://www.google.com" target="_blank">구글로 이동</a>
+
+    <a href="#aa"><img src="page_top.png"></a>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\github\universtiy_c++\ex.260909_2\ex.260909_2\main.cpp(8,9): warning C4477: 'printf' : 서식 문자열 '%p'에 'void *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+D:\github\universtiy_c++\ex.260909_2\ex.260909_2\main.cpp(8,9): warning C4313: 'printf': 서식 문자열의 '%p'이(가) int' 형식의 인수 1과(와) 충돌합니다.
+D:\github\universtiy_c++\ex.260909_2\ex.260909_2\main.cpp(9,9): warning C4477: 'printf' : 서식 문자열 '%p'에 'void *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double'입니다.
+  ex.260909_2.vcxproj -> D:\github\universtiy_c++\ex.260909_2\x64\Debug\ex.260909_2.exe
