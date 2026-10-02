@@ -1,5 +1,210 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <conio.h>
+#include <string.h>
+#include <stdlib.h>
+
+typedef struct _stringArray
+{
+    char** buf;
+    int count;
+    int capacity;
+}StringArray;
+void Menu()
+{
+    puts("1. 문자열 입력:");
+    puts("2. 모든 문자열 출력:");
+    puts("3. 문자열 검색:");
+    puts("4. 문자열 삭제:");
+    puts("0. 프로그램 종료");
+}
+void AddString(StringArray* psa)
+{
+    if (psa->count >= psa->capacity)
+        return;
+
+    printf("문자열 입력:");
+    char str[500];
+    gets_s(str, 500);
+    char* s = (char*)malloc(strlen(str) + 1);
+    strcpy_s(s, strlen(str) + 1, str);
+
+    psa->buf[psa->count] = s;
+    ++psa->count;
+}
+void PrintString(const StringArray* psa)
+{
+    for (int i = 0; i < psa->count; ++i)
+        printf("[%d] : %s\n", i, psa->buf[i]);
+}
+void SearchString(const StringArray* psa)
+{
+    char str[500];
+    printf("검색할 문자열 입력:");
+    gets_s(str, 500);
+    for (int i = 0; i < psa->count; ++i)
+    {
+        if (strcmp(str, psa->buf[i]) == 0)
+        {
+            printf("[%d] : %s 있습니다.\n", i, str);
+            break;
+        }
+    }
+}
+void RemoveString(StringArray* psa)
+{
+    char str[500];
+    printf("삭제할 문자열 입력:");
+    gets_s(str, 500);
+    for (int i = 0; i < psa->count; ++i)
+    {
+        
+        if (strcmp(str, psa->buf[i]) == 0)
+        {
+            free(psa->buf[i]);
+            for (int j = i; j < psa->count - 1; ++j)
+                psa->buf[j] = psa->buf[j + 1];
+            --psa->count;
+            break;
+        }
+    }
+}
+void InitString(StringArray* psa, int capacity)
+{
+    psa->buf = (char**)malloc(sizeof(char*) * capacity);
+    psa->count = 0;
+    psa->capacity = capacity;
+}
+void UninitString(StringArray* psa)
+{
+    for (int i = 0; i < psa->count; ++i)
+        free(psa->buf[i]);
+}
+
+void Sort(StringArray* psa)
+{
+    for (int i = 0; i < psa->count; ++i)
+    {
+        if (psa->buf[i + 1] != psa->buf[psa->count])
+        {
+            if (strcmp(psa->buf[i], psa->buf[i + 1]) == 1)
+            {
+                char* value = psa->buf[i + 1];
+                printf("%s\n", value);
+                psa->buf[i + 1] = psa->buf[i];
+                psa->buf[i] = value;
+                printf("%s\n", psa->buf[i]);
+                printf("%s\n", psa->buf[i + 1]);
+            }
+        }
+        else
+            break;
+    }
+    
+}
+
+int main()
+{
+    StringArray sa;
+    int run = 1;
+
+    InitString(&sa, 1000);
+    while (run)
+    {
+        Menu();
+        switch (_getch())
+        {
+        case '1':
+            AddString(&sa);
+            break;
+        case '2':
+            PrintString(&sa);
+            break;
+        case '3':
+            SearchString(&sa);
+            break;
+        case '4':
+            RemoveString(&sa);
+            break;
+        case '5':
+            Sort(&sa);
+            break;
+        case '0':
+            run = 0;
+            break;
+        }
+    }
+
+    UninitString(&sa);
+}
+//// point.c - 구조체 정의와 기본 함수
+//typedef struct _point
+//{
+//	int x;
+//	int y;
+//} point;
+//void printpoint(const point* p)
+//{
+//	printf("(%d, %d)\n", p->x, p->y);
+//}
+//void setpoint(point* p, int x, int y)
+//{
+//	p->x = x;
+//	p->y = y;
+//
+//	//(*p).x = x;
+//	//(*p).y = y;
+//
+//}
+//
+//// pointarray.c - 배열 관리 함수
+//point* allocpointarray(int cap)
+//{
+//	return (point*)malloc(sizeof(point) * cap);
+//}
+//void freepointarray(point pa[])
+//{
+//	free(pa);
+//}
+//void initpointarray(point pa[], int size)
+//{
+//	for (int i = 0; i < size; ++i)
+//		setpoint(&pa[i], i + 1, i + 1);
+//}
+//void printpointarray(const point pa[], int size)
+//{
+//	for (int i = 0; i < 10; ++i)
+//		printpoint(&pa[i]);
+//}
+//
+//// main 영역
+//int main()
+//{
+//	point* pa = allocpointarray(10);
+//	
+//
+//	initpointarray(pa, 10);
+//	printpointarray(pa, 10);
+//
+//	freepointarray(pa);
+//}
+
+//struct Student
+//{
+//	char name[20];
+//	int score;
+//};
+//
+//int main()
+//{
+//	Student std = {"a", 20};
+//
+//	printf("%s, %d\n", std.name, std.score);
+//	std = { "b", 30 };
+//	printf("%s, %d\n", std.name, std.score);
+//	std = { "c", 40 };
+//	printf("%s, %d\n", std.name, std.score);
+//}
+
 // 연산자
 /*
 +
@@ -114,21 +319,21 @@ printf();
 //
 //}
 
-#include <stdio.h>
-void PrintArray(int arr[], int size)
-{
-	for (int i = 0; i < size; ++i)
-		printf("%5d", arr[i]);
-	printf("\n");
-}
-int main()
-{
-	int arr[10] = { 5, 7, 3, 4, 6, 2, 1, 9, 7, 3 };
-	PrintArray(arr, 10);
-
-	int a = 10, b = 20;
-	int result = a + b;
-	printf("result = %d\n", result);
-	printf("result = %d\n", result);
-	printf("result = %d\n", result);
-}
+//#include <stdio.h>
+//void PrintArray(int arr[], int size)
+//{
+//	for (int i = 0; i < size; ++i)
+//		printf("%5d", arr[i]);
+//	printf("\n");
+//}
+//int main()
+//{
+//	int arr[10] = { 5, 7, 3, 4, 6, 2, 1, 9, 7, 3 };
+//	PrintArray(arr, 10);
+//
+//	int a = 10, b = 20;
+//	int result = a + b;
+//	printf("result = %d\n", result);
+//	printf("result = %d\n", result);
+//	printf("result = %d\n", result);
+//}
