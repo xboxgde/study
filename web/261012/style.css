@@ -1,0 +1,54 @@
+* /* 전체 선택자 */
+{
+    color:rgb(76, 23, 201);
+
+}
+
+h1, h5 /* 태그 선택자 */
+{
+    text-align: center; /*가운데 정렬*/
+    color:rgb(27, 132, 136);
+}
+
+#aa /* 아이디(유일한 이름) 선택자 */
+{
+    color: orange;
+}
+
+.bb /* 클래스(중복 가능) 선택자 */
+{
+    color: rgb(255, 0, 140);
+}
+
+header h5 /* 계층(자손) 선택자 (header 태그 아래에 h5 태그) */
+{
+    text-align: center; /*가운데 정렬*/
+}
+
+nav>ul>li:hover /* 상태 선택자(hover: 마우스 올라간 상태) */ 
+{
+    color: green;
+}
+
+ul>li:nth-child(4) /* 상태 선택자 (nth-child: n번째 자식 태그에 적용) */
+{
+    background-color: rgb(255, 255, 0);
+}
+
+iframe
+{
+    width:100%;
+    height: 320px;
+    border-radius: 20px;
+    border: 2px solid gray; 
+}
+
+
+
+
+
+
+
+
+
+
