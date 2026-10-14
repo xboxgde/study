@@ -422,7 +422,7 @@ int main()
 //
 //void PrintPerson(Person* p)
 //{
-//	printf("naem: %s, phone: %s\n", p->name, p->phone);
+//	printf("name: %s, phone: %s\n", p->name, p->phone);
 //}
 //
 //int main()

@@ -3,24 +3,26 @@
 #include <string.h>
 #include <stdlib.h>
 
+struct Node
+{
+	int data;
+	Node* prev;
+	Node* next;
+};
+
 int main()
 {
-	int row = 3, col = 5;
+	Node* head;
+	Node* tail;
 
-	int** ary = (int**)malloc(sizeof(int*) * row);
+	Node* p;
+	Node* n;
+	p = tail->prev;
+	p->next = n;
+	n->prev = p;
+	n->next = tail;
 
-	for (int i = 0; i < row; ++i)
-		ary[i] = (int*)malloc(sizeof(int) * col);
 
-	for (int i = 0; i < row; ++i)
-	{
-		for (int j = 0; j < col; ++j)
-		{
-			ary[i][j] = (3 + i) * (j + 1);
-			printf("%3d", ary[i][j]);
-		}
-		printf("\n");
-	}
 }
 //#include <stdio.h>
 //#include <conio.h>
