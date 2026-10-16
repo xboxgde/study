@@ -2,28 +2,108 @@
 #include <conio.h>
 #include <string.h>
 #include <stdlib.h>
-
-struct Node
+typedef struct Student
 {
-	int data;
-	Node* prev;
-	Node* next;
-};
+	char name[20];
+	int score;
+}stdt;
+
+stdt* AllocStudent(int cap)
+{
+	return (stdt*)malloc(sizeof(stdt) * cap);
+}
+
+void AllocStudent2(stdt** s, int cap)
+{
+	*s = (stdt*)malloc(sizeof(stdt) * cap);
+}
 
 int main()
 {
-	Node* head;
-	Node* tail;
-
-	Node* p;
-	Node* n;
-	p = tail->prev;
-	p->next = n;
-	n->prev = p;
-	n->next = tail;
-
-
+	stdt* std = AllocStudent(5);
+	
+	AllocStudent2(&std, 10);
+	
+	free(std);
 }
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//struct Student
+//{
+//	int number;
+//	int score;
+//};
+//typedef Student stds;
+//
+//void SetStudent(Student* s, int num, int sco)
+//{
+//	s->number = num;
+//	s->score = sco;
+//
+//}
+//
+//void AllocStudentArray(Student** s, int array)
+//{
+//	*s = (Student*)malloc(sizeof(Student) * array);
+//}		
+//	
+//void InitStudentArray(Student p[], int size)
+//{
+//	for (int i = 0; i < size; ++i)
+//		SetStudent(&p[i], i + 1		, i + 1);
+//}
+//
+//void PrintStudetArray(Student p[], int size)
+//{
+//	for (int i = 0; i < size; ++i)
+//		printf("%d %d\n", p[i].number, p[i].number);
+//}
+//
+//int main()
+//{
+//	Student* std = NULL;
+//
+//	AllocStudentArray(&std, 10);
+//
+//	InitStudentArray(std, 10);
+//
+//	PrintStudetArray(std, 10);
+//
+//	free(std);
+//
+//
+//}
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//
+//struct Node
+//{
+//	int data;
+//	Node* prev;
+//	Node* next;
+//};
+//
+//int main()
+//{
+//	Node* head;
+//	Node* tail;
+//
+//	Node* p;
+//	Node* n;
+//	p = tail->prev;
+//	p->next = n;
+//	n->prev = p;
+//	n->next = tail;
+//
+//
+//}
+
 //#include <stdio.h>
 //#include <conio.h>
 //#include <string.h>
