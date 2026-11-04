@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\github\\universtiy_c\u002B\u002B\\ex.260923\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6E8420FC-C44B-4894-9344-FFBC0818AD14}|ex.260923\\ex.260923.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.260923\\ex.260923\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6E8420FC-C44B-4894-9344-FFBC0818AD14}|ex.260923\\ex.260923.vcxproj|solutionrelative:ex.260923\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.260923\\ex.260923\\main.cpp",
-              "RelativeDocumentMoniker": "ex.260923\\main.cpp",
-              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.260923\\ex.260923\\main.cpp",
-              "RelativeToolTip": "ex.260923\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-23T06:58:41.961Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"

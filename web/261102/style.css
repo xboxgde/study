@@ -1,0 +1,30 @@
+/* 웹 폰트 설정 -> @import 사용 */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(247, 177, 177);
+    color: rgb(87, 37, 37);
+    font-family: "Black Han Sans", sans-serif;
+}
+
+body
+{
+    width: 800px;
+    margin: 50px auto;
+}
+
+header, h1, h3
+{
+    background: rgb(73, 71, 71);
+    padding: 10px;
+    text-align: center;
+}
+
+header
+{
+    border-radius: 30px 30px 0 0;
+}
+
