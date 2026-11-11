@@ -1,0 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h2
+{
+    text-align: center;
+    color: gray;
+    margin:30px;
+}
+
+p
+{
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.2em; /*글자 간격*/
+    line-height: 1.5em; /*줄 간격*/
+}
+
+img
+{
+    width: 350px;
+    margin-left: 150px;
+    border-radius: 50%;
+}
