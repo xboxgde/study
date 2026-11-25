@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\universtiy_c\u002B\u002B\\ex.261118\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0ADCE172-A78A-4448-80AB-5D7210DD2CCB}|ex.261118\\ex.261118.vcxproj|D:\\github\\universtiy_c\u002B\u002B\\ex.261118\\ex.261118\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0ADCE172-A78A-4448-80AB-5D7210DD2CCB}|ex.261118\\ex.261118.vcxproj|solutionrelative:ex.261118\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\github\\universtiy_c\u002B\u002B\\ex.261118\\ex.261118\\main.cpp",
+              "RelativeDocumentMoniker": "ex.261118\\main.cpp",
+              "ToolTip": "D:\\github\\universtiy_c\u002B\u002B\\ex.261118\\ex.261118\\main.cpp*",
+              "RelativeToolTip": "ex.261118\\main.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-18T05:05:45.473Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Hi Melody';
+   scroll-behavior: smooth; /* 스크롤 스르륵 */
+}
+
+#content {
+    width: 800px; 
+    margin: 30px auto; /* 위아래 30px 좌우 auto(가운데 정렬) */
+
+    /*
+    background-image: url("../images/back.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+
+    /* 숏핸드 방식으로 작성 */
+    background: rgb(218, 243, 243) no-repeat center url("../images/back4.png");
+}
+
+header {
+    height: 150px;
+    background-color: rgb(142, 214, 190);
+}
+
+header h1 {
+    font-size: 300%;
+    font-style: italic;
+    font-family: "Chiron Sung HK";
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 45px; 
+    color: rgb(17, 93, 29);
+}
+
+nav {
+    height: 50px;
+    background-color: cadetblue;
+}
+
+section {
+    height: 500px;
+    background-color: rgb(141, 237, 209); 
+}
+
+section h3, section p {
+    font-size: 160%;
+    color: rgb(8, 73, 142);
+    padding-top: 15px;
+    text-align: center;
+}
+
+section video, section iframe {
+    margin-left: 150px;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(44, 67, 113); 
+}
+
+#pagetop {
+    position: fixed; /* 스크롤과 상관없이 원하는 자리에 고정 */
+    right: 20px;
+    bottom: 20px;
+}
